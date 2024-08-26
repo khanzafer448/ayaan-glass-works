@@ -1,0 +1,128 @@
+.blogs-grid-section {
+  display: grid;
+  gap: 72px 32px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.blogs-grid-section .blogs-box {
+  width: 100%;
+}
+
+.blogs-grid-section .blogs-box img {
+  height: 312px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.blogs-grid-section .blogs-box h4 {
+  margin: 24px 0px 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #212121;
+}
+.blogs-grid-section .blogs-box p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #889099;
+}
+.blogs-grid-section .blogs-box a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #ae7d3b;
+}
+.blogs-grid-section .blogs-box a img {
+  height: 13px;
+  width: fit-content;
+  margin-left: 10px;
+}
+.blogs-section {
+  padding: 80px 0px;
+}
+
+/********** pagination *********/
+
+.home-pagination {
+  width: 231px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #eef0f3;
+  box-shadow: 0px 1px 2px rgba(42, 51, 66, 0.06);
+  border-radius: 6px;
+}
+
+.arrowIcon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.current-page {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #ae7d3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.relative-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbc3cf;
+  border-left: 1px solid #eef0f3;
+  border-right: 1px solid #eef0f3;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.blogs-pagination ul {
+  margin: 102px auto 0px;
+  max-width: fit-content;
+}
+.blogs-pagination li.page-item span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #bbc3cf;
+  cursor: pointer;
+}
+
+.blogs-pagination li.page-item.active span {
+  color: #ae7d3b;
+  background: transparent;
+  border: 1px solid #dee2e6;
+}
+
+.blogs-pagination ul li a:hover,
+.blogs-pagination ul li a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+@media screen and (max-width: 480px) {
+  .blogs-grid-section {
+    display: grid;
+    gap: 32px 16px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
