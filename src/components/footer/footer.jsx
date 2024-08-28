@@ -33,13 +33,13 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-column">
-            <Link to="/">
+            <Link to="/" className="max-sm:flex max-sm:justify-center">
               <img src={logo} alt="footer-logo" width={140} height={30} />
             </Link>
           </div>
 
           {menuItems.map((menu, index) => (
-            <div key={index} className="footer-column">
+            <div key={index} className="footer-column max-sm:w-1/3 max-sm:pb-6">
               <h3>{menu.title}</h3>
               <ul>
                 {menu.links.map((link, idx) => (
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           ))}
 
-          <div className="footer-column">
+          <div className="footer-column max-sm:w-2/3 max-sm:pb-6">
             <h3>Contact Us</h3>
             <ul className="footer-address">
               <li>Behind Bank of Baroda, Kursi Road, Tehripuliya, Lucknow</li>

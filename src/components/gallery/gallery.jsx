@@ -1,3 +1,5 @@
+import { useState } from "react";
+import ImagePreview from "../modal/imagePreview";
 import "./gallery.css";
 
 const productData = [
@@ -55,25 +57,40 @@ const productData = [
     title: "Modular Kitchen",
   },
 ];
-
+const initState = {
+  src: "",
+  title: "",
+};
 const Gallery = () => {
+  const [imageData, setImageData] = useState(initState);
+  const handleClose = () => {
+    setImageData(initState);
+  };
   return (
-    <div className="home-content">
-      <div className="gallery-section">
-        <div className="container">
-          <div className="home-product-grid">
-            {productData.map((product, idx) => (
-              <div key={idx} className={`home-product-box`}>
-                <div className="home-product-box-cover">
-                  <img src={product.src} alt={product.title} />
+    <>
+      <div className="home-content">
+        <div className="gallery-section">
+          <div className="container">
+            <div className="home-product-grid">
+              {productData.map((product, idx) => (
+                <div
+                  key={idx}
+                  className={`home-product-box`}
+                  onClick={() => setImageData(product)}
+                  role="presentation"
+                >
+                  <div className="home-product-box-cover">
+                    <img src={product.src} alt={product.title} />
+                  </div>
+                  <h4 className="truncate">{product.title}</h4>
                 </div>
-                <h4 className="truncate">{product.title}</h4>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <ImagePreview imageData={imageData} handleClose={handleClose} />
+    </>
   );
 };
 
