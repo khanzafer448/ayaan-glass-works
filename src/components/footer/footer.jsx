@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/footer/logo.png";
 import "./footer.css";
 
 const Footer = () => {
@@ -12,17 +11,14 @@ const Footer = () => {
           title: "Home",
           url: "/",
         },
-        {
-          title: "About Us",
-          url: "/",
-        },
+
         {
           title: "Gallery",
           url: "/gallery",
         },
         {
           title: "Contact Us",
-          url: "/",
+          url: "/contact",
         },
       ],
     },
@@ -34,7 +30,12 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-column">
             <Link to="/" className="max-sm:flex max-sm:justify-center">
-              <img src={logo} alt="footer-logo" width={140} height={30} />
+              <img
+                src="images/logo.svg"
+                alt="footer-logo"
+                width={150}
+                height={30}
+              />
             </Link>
           </div>
 
@@ -60,12 +61,7 @@ const Footer = () => {
               <li>
                 Call: <a href="tel:+917524891063">+91 7524891063</a>
               </li>
-              <li>
-                WhatsApp:{" "}
-                <a href="https://wa.me/917524891063" target="_blank">
-                  +91 7524891063
-                </a>
-              </li>
+
               <li>
                 Email: <a href="mailto:ayan@gmail.com">ayan@gmail.com</a>
               </li>

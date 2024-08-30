@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
-import logo from "../../assets/images/footer/logo.png";
 import "./header.css";
 
 const NAV_DATA = [
@@ -9,16 +8,12 @@ const NAV_DATA = [
     url: "/",
   },
   {
-    title: "About Us",
-    url: "/not",
-  },
-  {
     title: "Gallery",
     url: "/gallery",
   },
   {
     title: "Contact Us",
-    url: "/not",
+    url: "/contact",
   },
 ];
 
@@ -31,7 +26,7 @@ const Header = () => {
           <div className="nam-menu-grid">
             <Navbar.Brand href="/">
               <div className="logo">
-                <img src={logo} alt="logo" width={140} height={30} />
+                <img src="images/logo.svg" alt="logo" width={160} height={30} />
               </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

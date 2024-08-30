@@ -152,7 +152,7 @@ const Home = () => {
                 control, pricing, and shipping. As a buyer, you benefit from
                 high-quality products at the best prices.
               </p>
-              <Link to="/">
+              <Link to="/gallery">
                 Learn More <img src={arrowicon} alt="arrow-icon" />
               </Link>
             </div>
@@ -185,7 +185,7 @@ const Home = () => {
                 About <span>Us</span>
               </h2>
             </div>
-            <Link to="/">
+            <Link to="/gallery">
               Explore More <img src={arrowicon} alt="arrow-icon" />
             </Link>
           </div>
@@ -215,7 +215,7 @@ const Home = () => {
                 Discounted <span>Glass</span> Supply Lucknow
               </h2>
             </div>
-            <Link to="/">
+            <Link to="/gallery">
               Explore More <img src={arrowicon} alt="arrow-icon" />
             </Link>
           </div>
@@ -241,11 +241,10 @@ const Home = () => {
             <div className="heading">
               <span>OUR PROJECTS</span>
               <h2>
-                We have done more than <span>712+</span> flooring successful
-                project
+                We have done more than <span>100+</span> successful project
               </h2>
             </div>
-            <Link to="/">
+            <Link to="/gallery">
               Explore More <img src={arrowicon} alt="arrow-icon" />
             </Link>
           </div>
@@ -277,7 +276,7 @@ const Home = () => {
           <h2>
             Let&apos;s Be in <span>Touch</span>
           </h2>
-          <Link to="/">Contact Us</Link>
+          <Link to="/contact">Contact Us</Link>
         </div>
       </div>
     </div>

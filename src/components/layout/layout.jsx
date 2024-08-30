@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Footer from "../footer/footer";
 import Header from "../header/header";
@@ -6,8 +7,16 @@ import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Layout = ({ children }) => {
+  const topElementRef = useRef(null);
+
+  useEffect(() => {
+    if (topElementRef.current) {
+      topElementRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
-    <div className="wrapper">
+    <div className="wrapper" ref={topElementRef}>
       <Header />
       <div className="content">{children}</div>
       <Footer />
