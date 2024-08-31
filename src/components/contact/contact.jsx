@@ -25,8 +25,11 @@ const Contact = () => {
                 <p className="pb-6 text-sm font-medium text-n300">
                   Speak to our friendly team.
                 </p>
-                <a href="/mailto:support@ayanglass.com" className="font-medium">
-                  support@ayanglass.com
+                <a
+                  href="mailto:abraamgazi@gmail.com"
+                  className="font-medium hover:text-[#3d68fe]"
+                >
+                  abraamgazi@gmail.com
                 </a>
               </div>
               <div className="col-span-12 flex flex-col items-center justify-center rounded-3xl border border-n30 p-6 md:col-span-4 lg:p-10">
@@ -45,9 +48,10 @@ const Contact = () => {
                 </div>
                 <h4 className="heading-4 py-4">Visit us</h4>
                 <p className="pb-6 text-sm font-medium text-n300 text-center">
-                  Behind Bank of Baroda, Kursi Road, Tehripuliya, Lucknow.
+                  Behind Bank of Baroda, Kursi Rd, Tedhi Pulia, Adil Nagar,
+                  Lucknow, Uttar Pradesh 226021.
                 </p>
-                <a href="/mailto:support@servibe.com" className="font-medium">
+                <a href="#" className="font-medium hover:text-[#3d68fe]">
                   View on Google Maps
                 </a>
               </div>
@@ -69,7 +73,10 @@ const Contact = () => {
                 <p className="pb-6 text-sm font-medium text-n300">
                   Mon-Fri from 8am to 5pm.
                 </p>
-                <a href="/tel:+917524891063" className="font-medium">
+                <a
+                  href="tel:+917524891063"
+                  className="font-medium hover:text-[#3d68fe]"
+                >
                   +91 7524891063
                 </a>
               </div>

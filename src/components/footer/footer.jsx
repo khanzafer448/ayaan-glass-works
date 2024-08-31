@@ -57,13 +57,17 @@ const Footer = () => {
           <div className="footer-column max-sm:w-2/3 max-sm:pb-6">
             <h3>Contact Us</h3>
             <ul className="footer-address">
-              <li>Behind Bank of Baroda, Kursi Road, Tehripuliya, Lucknow</li>
+              <li>
+                Behind Bank of Baroda, Kursi Rd, Tedhi Pulia, Adil Nagar,
+                Lucknow, Uttar Pradesh 226021
+              </li>
               <li>
                 Call: <a href="tel:+917524891063">+91 7524891063</a>
               </li>
 
               <li>
-                Email: <a href="mailto:ayan@gmail.com">ayan@gmail.com</a>
+                Email:{" "}
+                <a href="mailto:abraamgazi@gmail.com">abraamgazi@gmail.com</a>
               </li>
             </ul>
           </div>

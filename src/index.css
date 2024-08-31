@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  transition: all 300ms;
+}
+
 .container {
   max-width: 1230px !important;
 }
