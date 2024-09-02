@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="https://ayanglass.com/schemas/sitemap/0.9"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="https://ayanglass.com/schemas/sitemap/0.9
-            https://ayanglass.com/schemas/sitemap/0.9/sitemap.xsd">
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- Created with Love -->
 
 <url>
-  <loc>https://weje.com/</loc>
+  <loc>https://ayanglass.com/</loc>
 </url>
 
 <url>
-  <loc>https://weje.com/help-center</loc>
+  <loc>https://ayanglass.com/contact</loc>
 </url>
 
 </urlset>
