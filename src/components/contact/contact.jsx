@@ -74,10 +74,10 @@ const Contact = () => {
                   Mon-Fri from 8am to 5pm.
                 </p>
                 <a
-                  href="tel:+917524891063"
+                  href="tel:+916392600686"
                   className="font-medium hover:text-[#3d68fe]"
                 >
-                  +91 7524891063
+                  +91 6392600686
                 </a>
               </div>
             </div>

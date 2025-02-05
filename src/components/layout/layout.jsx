@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       <Footer />
       <a
         className="fixed-whatsapp fixed bottom-4 max-sm:bottom-8 right-4 z-[9999999]"
-        href="https://wa.me/+917524891063?text=Hi!"
+        href="https://wa.me/+916392600686?text=Hi!"
         target="_blank"
         rel="noopener noreferrer"
       >

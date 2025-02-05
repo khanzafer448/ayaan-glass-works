@@ -6,9 +6,9 @@ import mapicon from "../../assets/images/home/mapicon.svg";
 import slideicon from "../../assets/images/home/slideicon.svg";
 
 import fb from "../../assets/images/home/fb.svg";
-import twitter from "../../assets/images/home/twitter.svg";
-import linkedin from "../../assets/images/home/linkedin.svg";
 import insta from "../../assets/images/home/insta.svg";
+import { FaYoutube } from "react-icons/fa";
+
 import "./home.css";
 
 const Home = () => {
@@ -120,17 +120,36 @@ const Home = () => {
         <div className="social-menu">
           <ul>
             {[
-              { icon: fb, alt: "fb" },
-              { icon: twitter, alt: "twitter" },
-              { icon: linkedin, alt: "linkedin" },
-              { icon: insta, alt: "insta" },
-            ].map((social, idx) => (
-              <li key={idx}>
-                <Link to="">
-                  <img src={social.icon} alt={social.alt} />
-                </Link>
-              </li>
-            ))}
+              {
+                icon: fb,
+                alt: "fb",
+                url: "https://www.facebook.com/share/15x7J4Uq9T/",
+              },
+              {
+                icon: insta,
+                alt: "insta",
+                url: "https://www.instagram.com/ayanglass_aluminum_fabrication?igsh=MW40dHBoZDNxeDg0",
+              },
+              {
+                icon: insta,
+                alt: "youtube",
+                url: "https://youtube.com/@ayanglass-b1x?si=b4LmtNp79NfFSosp",
+              },
+            ].map((social) =>
+              social.alt === "youtube" ? (
+                <li key={social.url}>
+                  <Link to={social.url} target="_blank">
+                    <FaYoutube className="text-white" />
+                  </Link>
+                </li>
+              ) : (
+                <li key={social.url}>
+                  <Link to={social.url} target="_blank">
+                    <img src={social.icon} alt={social.alt} />
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
         </div>
       </div>

@@ -1,4 +1,9 @@
 import { Link } from "react-router-dom";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutubeSquare,
+} from "react-icons/fa";
 import "./footer.css";
 
 const Footer = () => {
@@ -28,7 +33,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-grid">
-          <div className="footer-column">
+          <div className="footer-column flex flex-col gap-3 max-sm:items-center">
             <Link to="/" className="max-sm:flex max-sm:justify-center">
               <img
                 src="images/logo.svg"
@@ -37,6 +42,26 @@ const Footer = () => {
                 height={30}
               />
             </Link>
+            <div className="flex gap-2">
+              <Link
+                to="https://www.facebook.com/share/15x7J4Uq9T/"
+                target="_blank"
+              >
+                <FaFacebookSquare className="text-gray-900 hover:text-[#1877F2] text-4xl transition-all" />
+              </Link>
+              <Link
+                to="https://www.instagram.com/ayanglass_aluminum_fabrication?igsh=MW40dHBoZDNxeDg0"
+                target="_blank"
+              >
+                <FaInstagramSquare className="text-gray-900 hover:text-[#fd1d1d] text-4xl transition-all" />
+              </Link>
+              <Link
+                to="https://youtube.com/@ayanglass-b1x?si=b4LmtNp79NfFSosp"
+                target="_blank"
+              >
+                <FaYoutubeSquare className="text-gray-900 hover:text-[#cd201f] text-4xl transition-all" />
+              </Link>
+            </div>
           </div>
 
           {menuItems.map((menu, index) => (
@@ -62,7 +87,7 @@ const Footer = () => {
                 Lucknow, Uttar Pradesh 226021
               </li>
               <li>
-                Call: <a href="tel:+917524891063">+91 7524891063</a>
+                Call: <a href="tel:+916392600686">+91 6392600686</a>
               </li>
 
               <li>
