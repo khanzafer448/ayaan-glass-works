@@ -16,9 +16,16 @@ const Footer = () => {
           title: "Home",
           url: "/",
         },
-
         {
           title: "Gallery",
+          url: "/gallery2",
+        },
+        {
+          title: "Video",
+          url: "/video",
+        },
+        {
+          title: "Collection",
           url: "/gallery",
         },
         {

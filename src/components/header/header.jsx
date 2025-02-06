@@ -9,6 +9,14 @@ const NAV_DATA = [
   },
   {
     title: "Gallery",
+    url: "/gallery2",
+  },
+  {
+    title: "Video",
+    url: "/video",
+  },
+  {
+    title: "Collection",
     url: "/gallery",
   },
   {
